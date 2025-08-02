@@ -139,10 +139,7 @@ document.querySelector("form").addEventListener("submit", async function (e) {
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({ 
-        action: "login",
-        username: username, 
-        password: password })
+      body: JSON.stringify({username, password })
     });
 
     const result = await response.json();
