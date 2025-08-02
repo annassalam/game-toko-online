@@ -143,10 +143,10 @@ document.querySelector("form").addEventListener("submit", async function (e) {
     });
 
     const result = await response.json();
-
+    console.log(result);
     if (result.status === "success") {
       alert("Login berhasil!\nSelamat datang, " + result.nama);
-      window.location.href = "index.html"; // arahkan ke dashboard atau halaman utama
+      window.location.href = "index.html";
     } else {
       alert("Login gagal! Username atau password salah.");
     }
