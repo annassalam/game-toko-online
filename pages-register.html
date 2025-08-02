@@ -139,33 +139,24 @@
   <script src="assets/vendor/tinymce/tinymce.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script>
-    const form = document.querySelector("form");
-    form.addEventListener("submit", async (e) => {
-      e.preventDefault();
+  const form = document.querySelector("form");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-      const name = document.getElementById("yourName").value.trim();
-      const email = document.getElementById("yourEmail").value.trim();
-      const username = document.getElementById("yourUsername").value.trim();
-      const password = document.getElementById("yourPassword").value.trim();
+    const name = document.getElementById("yourName").value.trim();
+    const email = document.getElementById("yourEmail").value.trim();
+    const username = document.getElementById("yourUsername").value.trim();
+    const password = document.getElementById("yourPassword").value.trim();
 
-      const endpoint = "https://script.google.com/macros/s/AKfycbya4lK9TqpmV-lhKEDiG03eJIi5Ce5dSh5blR08NCeB9jAjZTk_t0JyX1Qew-CVLWkgjA/exec";
+    const endpoint = "https://script.google.com/macros/s/AKfycbya4lK9TqpmV-lhKEDiG03eJIi5Ce5dSh5blR08NCeB9jAjZTk_t0JyX1Qew-CVLWkgjA/exec";
 
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", endpoint, true);
+    xhr.setRequestHeader("Content-Type", "application/json");
+
+    xhr.onload = function () {
       try {
-        const response = await fetch(endpoint, {
-          method: "POST",
-          body: JSON.stringify({
-            nama: name,
-            email: email,
-            username: username,
-            password: password
-          }),
-          headers: {
-            "Content-Type": "application/json"
-          }
-        });
-
-        const result = await response.json();
-
+        const result = JSON.parse(xhr.responseText);
         if (result.status === "username_exists") {
           alert("Username sudah digunakan. Silakan pilih yang lain.");
         } else if (result.status === "success") {
@@ -175,11 +166,22 @@
           alert("Gagal menyimpan data.");
         }
       } catch (err) {
-        console.error("Error:", err);
-        alert("Terjadi kesalahan jaringan.");
+        alert("Respon server tidak valid.");
       }
-    });
-  </script>
+    };
+
+    xhr.onerror = function () {
+      alert("Terjadi kesalahan jaringan.");
+    };
+
+    xhr.send(JSON.stringify({
+      nama: name,
+      email: email,
+      username: username,
+      password: password
+    }));
+  });
+</script>
 
 
   <!-- Template Main JS File -->
