@@ -139,51 +139,42 @@
   <script src="assets/vendor/tinymce/tinymce.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script>
-  const form = document.querySelector("form");
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
+    document.querySelector("form").addEventListener("submit", function (e) {
+      e.preventDefault();
 
-    const name = document.getElementById("yourName").value.trim();
-    const email = document.getElementById("yourEmail").value.trim();
-    const username = document.getElementById("yourUsername").value.trim();
-    const password = document.getElementById("yourPassword").value.trim();
+      const name = document.getElementById("yourName").value.trim();
+      const email = document.getElementById("yourEmail").value.trim();
+      const username = document.getElementById("yourUsername").value.trim();
+      const password = document.getElementById("yourPassword").value.trim();
 
-    const endpoint = "/api/register";
-
-    const xhr = new XMLHttpRequest();
-    xhr.open("POST", endpoint, true);
-    xhr.setRequestHeader("Content-Type", "application/json");
-
-    xhr.onload = function () {
-      try {
-        const result = JSON.parse(xhr.responseText);
-        if (result.status === "username_exists") {
+      fetch("/api/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          action: "register",
+          nama: name,
+          email: email,
+          username: username,
+          password: password
+        })
+      })
+      .then(response => response.json())
+      .then(result => {
+        if (result.status === "username_ada") {
           alert("Username sudah digunakan. Silakan pilih yang lain.");
         } else if (result.status === "success") {
           alert("Registrasi berhasil!");
-          window.location.href = "pages-login.html";
         } else {
           alert("Gagal menyimpan data.");
         }
-      } catch (err) {
-        alert("Respon server tidak valid.");
-      }
-    };
-
-    xhr.onerror = function () {
-      alert("Terjadi kesalahan jaringan.");
-    };
-
-    xhr.send(JSON.stringify({
-      nama: name,
-      email: email,
-      username: username,
-      password: password
-    }));
-  });
-</script>
-
-
+      })
+      .catch(() => {
+        alert("Terjadi kesalahan jaringan");
+      });
+    });
+  </script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
