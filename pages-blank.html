@@ -508,44 +508,23 @@
 
   <main id="main" class="main">
 
-    <div class="pagetitle">
-      <h1>Blank Page</h1>
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item">Pages</li>
-          <li class="breadcrumb-item active">Blank</li>
-        </ol>
-      </nav>
-    </div><!-- End Page Title -->
+  <div class="pagetitle">
+    <h1>Anime Populer</h1>
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Populer</li>
+      </ol>
+    </nav>
+  </div><!-- End Page Title -->
 
-    <section class="section">
-      <div class="row">
-        <div class="col-lg-6">
+  <section class="section">
+    <div class="row" id="anime-container">
+      <!-- Kartu anime akan dimuat lewat JavaScript -->
+    </div>
+  </section>
 
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Example Card</h5>
-              <p>This is an examle page with no contrnt. You can use it as a starter for your custom pages.</p>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-lg-6">
-
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Example Card</h5>
-              <p>This is an examle page with no contrnt. You can use it as a starter for your custom pages.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-  </main><!-- End #main -->
+</main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
@@ -575,6 +554,42 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+  async function fetchPopularAnime() {
+    try {
+      const res = await fetch("https://animeapi.skin/trending");
+      const animeList = await res.json();
+
+      const container = document.getElementById("anime-container");
+      container.innerHTML = ""; // Clear existing
+
+      animeList.forEach(anime => {
+        const col = document.createElement("div");
+        col.className = "col-lg-4 col-md-6 mb-4";
+
+        col.innerHTML = `
+          <div class="card h-100">
+            <img src="${anime.thumbnail_url}" class="card-img-top" alt="${anime.title}">
+            <div class="card-body">
+              <h5 class="card-title">${anime.title}</h5>
+              <p class="card-text text-muted text-sm">${anime.genres}</p>
+              <p class="card-text text-sm">${anime.description.substring(0, 100)}...</p>
+              <p class="card-text"><strong>Episode:</strong> ${anime.episode} | <strong>Year:</strong> ${anime.year}</p>
+              <a href="${anime.embed_url}" target="_blank" class="btn btn-primary btn-sm">Watch</a>
+            </div>
+          </div>
+        `;
+
+        container.appendChild(col);
+      });
+
+    } catch (error) {
+      console.error("Failed to fetch anime:", error);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", fetchPopularAnime);
+</script>
 
 </body>
 
