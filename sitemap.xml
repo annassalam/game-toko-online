@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://game-toko-online.vercel.app/</loc>
+  <lastmod>2025-08-22T09:43:26+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/index.html</loc>
+  <lastmod>2025-08-22T09:43:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/users-profile.html</loc>
+  <lastmod>2025-08-22T09:43:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/pages-faq.html</loc>
+  <lastmod>2025-08-22T09:43:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/components-alerts.html</loc>
+  <lastmod>2025-08-22T09:43:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/components-accordion.html</loc>
+  <lastmod>2025-08-22T09:43:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/components-badges.html</loc>
+  <lastmod>2025-08-22T09:43:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/components-breadcrumbs.html</loc>
+  <lastmod>2025-08-22T09:43:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/components-buttons.html</loc>
+  <lastmod>2025-08-22T09:43:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/components-cards.html</loc>
+  <lastmod>2025-08-22T09:43:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/components-carousel.html</loc>
+  <lastmod>2025-08-22T09:43:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/components-list-group.html</loc>
+  <lastmod>2025-08-22T09:43:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/components-modal.html</loc>
+  <lastmod>2025-08-22T09:43:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/components-tabs.html</loc>
+  <lastmod>2025-08-22T09:43:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/components-pagination.html</loc>
+  <lastmod>2025-08-22T09:43:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/components-progress.html</loc>
+  <lastmod>2025-08-22T09:43:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/components-spinners.html</loc>
+  <lastmod>2025-08-22T09:43:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/components-tooltips.html</loc>
+  <lastmod>2025-08-22T09:43:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/forms-elements.html</loc>
+  <lastmod>2025-08-22T09:43:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/forms-layouts.html</loc>
+  <lastmod>2025-08-22T09:43:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/forms-editors.html</loc>
+  <lastmod>2025-08-22T09:43:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/forms-validation.html</loc>
+  <lastmod>2025-08-22T09:43:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/tables-general.html</loc>
+  <lastmod>2025-08-22T09:43:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/tables-data.html</loc>
+  <lastmod>2025-08-22T09:43:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/charts-chartjs.html</loc>
+  <lastmod>2025-08-22T09:43:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/charts-apexcharts.html</loc>
+  <lastmod>2025-08-22T09:43:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/charts-echarts.html</loc>
+  <lastmod>2025-08-22T09:43:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/icons-bootstrap.html</loc>
+  <lastmod>2025-08-22T09:43:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/icons-remix.html</loc>
+  <lastmod>2025-08-22T09:43:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/icons-boxicons.html</loc>
+  <lastmod>2025-08-22T09:43:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/pages-contact.html</loc>
+  <lastmod>2025-08-22T09:43:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/pages-register.html</loc>
+  <lastmod>2025-08-22T09:43:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/pages-login.html</loc>
+  <lastmod>2025-08-22T09:43:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/pages-error-404.html</loc>
+  <lastmod>2025-08-22T09:43:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://game-toko-online.vercel.app/pages-blank.html</loc>
+  <lastmod>2025-08-22T09:43:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
